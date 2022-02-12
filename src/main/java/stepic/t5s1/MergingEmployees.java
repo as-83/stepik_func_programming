@@ -1,10 +1,9 @@
 package stepic.t5s1;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import java.util.function.*;
 
 class MergingEmployees {
 
@@ -13,6 +12,9 @@ class MergingEmployees {
     }
 
     public static void main(String[] args) {
+
+
+
         Scanner scanner = new Scanner(System.in);
 
         List<String> employees1 = convertLineToEmployees(scanner.nextLine());
@@ -24,4 +26,6 @@ class MergingEmployees {
     private static List<String> convertLineToEmployees(String line) {
         return Arrays.stream(line.split("\\s+")).collect(Collectors.toList());
     }
+
+
 }
