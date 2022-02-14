@@ -1,6 +1,7 @@
 package stepic.t5s1;
 
 import java.util.*;
+import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.function.*;
@@ -13,9 +14,7 @@ class MergingEmployees {
 
     public static void main(String[] args) {
 
-
-
-        Scanner scanner = new Scanner(System.in);
+             Scanner scanner = new Scanner(System.in);
 
         List<String> employees1 = convertLineToEmployees(scanner.nextLine());
         List<String> employees2 = convertLineToEmployees(scanner.nextLine());
